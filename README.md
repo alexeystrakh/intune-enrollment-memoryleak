@@ -9,6 +9,8 @@ This repository contains a Xamarin.iOS (Forms) application that reproduces memor
 1. Create [IntuneEnrollmentDelegate.cs](/testFormsAppWithProfiler.iOS/IntuneEnrollmentDelegate.cs)
 1. Create an interface to open a WebView as many times as needed
 
-**Actual result**: WebView and corresponding WKWebView is retained in memory, number of instances corelates with number of WebView activations
+**Actual result**: WebView and corresponding WKWebView is retained in memory, number of instances correlates with number of WebView activations
 **Expected result**: WebView is garbage collected
 **Workaround**: comment the `IntuneEnrollmentDelegate` class to avoid memory leak
+
+![Image](SolutionItems/XamarinFormsiOS.InTune.MemoryLeak.png)
